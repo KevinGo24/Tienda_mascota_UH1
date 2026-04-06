@@ -6,7 +6,7 @@
 
 body {
     /* Usando la imagen de pasto que mencionaste */
-    background-image: url(/Picture/1.avif); 
+    background-image: url(/Picture/1.avif);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -16,7 +16,8 @@ body {
 }
 
 .Encabezado {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para que resalte el texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semitransparente para que resalte el texto */
     color: white;
     border-bottom: solid 3px white;
     height: 50px;
@@ -29,7 +30,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none; /* Quita los círculos de la lista */
+    list-style: none;
+    /* Quita los círculos de la lista */
 }
 
 h1 {
@@ -39,7 +41,7 @@ h1 {
     text-shadow: black 1px 2px 2px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
@@ -50,15 +52,15 @@ a{
     text-shadow: black 1px 2px 2px;
 }
 
-a:hover{
+a:hover {
     transform: scale(1.2);
 }
 
-h1:hover{
+h1:hover {
     transform: scale(1.2);
 }
 
-.Description{
+.Description {
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -71,7 +73,7 @@ h1:hover{
     flex-direction: column;
 }
 
-.text{
+.text {
     font-size: 1.5rem;
     text-align: center;
     font-weight: bolder;
@@ -80,16 +82,56 @@ h1:hover{
     order: 1;
 }
 
-.text_2{
+.text_2 {
     order: 2;
     display: flex;
     border: solid 5px green;
-    border-radius: 10px 10px ;
+    border-radius: 10px 10px;
     box-shadow: white 19px 10px 19px;
     font-size: 1.9rem;
     color: white;
     text-shadow: black 2px 2px 4px;
     text-align: center;
-    text-transform: uppercase; /* Para que resalte más como llamado a la acción */
+    text-transform: uppercase;
+    /* Para que resalte más como llamado a la acción */
     margin-top: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    /* Esto las pone una al lado de la otra */
+    justify-content: center;
+    /* Las centra en la pantalla */
+    gap: 20px;
+    /* Espacio entre las fotos */
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    border: solid green;
+    box-shadow: green 1px 20px 9px;
+    border: solid 3px white;
+    border-radius: 10px 10px;
+}
+
+.pet {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px;
+    box-shadow: black 2px 5px 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.pet_1 {
+    margin-right: auto;
+}
+.pet_2{
+    margin-top: auto;
+    height: 260px;
+}
+.pet_3{
+    margin-left: auto;
 }
