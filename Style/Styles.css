@@ -116,16 +116,19 @@ section {
 
 .pet {
     height: 300px;
-    width: 95%;
+    width: 350px;
     border-radius: 10px 10px;
     box-shadow: black 2px 5px 5px;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     display: flex;
-    transition: 0.5s;
-    margin-left: 5px;
+    transition: 1s;
+    padding: 10px;
+    
 }
 
-.pet:hover{
+.pet:hover {
     transform: scale(1.1);
 }
 
@@ -149,12 +152,16 @@ section {
 }
 
 .pet_1 {
+    display: flex;
+    /* Activa el diseño flexible */
+    flex-direction: column;
+    align-items: center;
     margin-right: auto;
     border: solid 3px white;
     width: 33%;
     height: 100%;
     cursor: pointer;
-
+    border-radius: 10px 10px;
 }
 
 .pet_1 p {
@@ -170,12 +177,16 @@ section {
 }
 
 .pet_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: auto;
     height: 260px;
     border: solid 3px white;
     width: 33%;
     height: 100%;
     cursor: pointer;
+    border-radius: 10px 10px;
 }
 
 .pet_2 p {
@@ -191,11 +202,15 @@ section {
 }
 
 .pet_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
     margin-left: auto;
     border: solid 3px white;
     width: 33%;
     height: 100%;
+    border-radius: 10px 10px;
 }
 
 .pet_3 p {
