@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/Assets/Picture/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 400vh;
+    max-height: 400vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+}
+
+.Encabezado {
+    background-color: transparent;
+    /* Fondo oscuro semitransparente para que resalte el texto */
+    color: white;
+    border-bottom: solid 3px white;
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 15px black;
+}
+
+.Nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    /* Quita los círculos de la lista */
+}
+
+li {
+    transition: 0.7s;
+    letter-spacing: 2px;
+}
+li:hover {
+    transform: scale(1.2);
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 5px 10px 5px black;
+    font-size: 20px;
+}
+
+
+.Portafolio {
+    margin-top: 10px;
+    border-radius: 10px 20px 40px;
+    border: solid 4px white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img{
+    text-align: center;
+    padding: 5px;
+    height: 500px;
+    border-radius: 100px;
+    border: solid 2px white;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.text_1 {
+    gap: 200px;
+    font-size: 20px;
+    color: white;
+    text-shadow: black 5px 2px 4px;
+    cursor: pointer;
+    padding: 15px;
+    /* <--- ESTO separa el contenido de los bordes blancos */
+    gap: 15px;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    text-align: right;
+    transition: all;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.text p {
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
+}
+
+.master {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: solid 3px white;
+    border-radius: 10px;
+    width: 100%;
+}
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 50px;
+    margin-top: 10px;
+}
+.proyect-photo{
+    height: 40px;
+    background: linear-gradient(10deg, cadetblue,white);
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 1s;
+}
+
+.proyect-photo:hover{
+    transform: scale(0.9);
+}
+
+.container-oculto{
+    display: none; /* Invisible al principio */
+    width: 100%;   /* Ocupa el ancho disponible en la columna derecha */
+    min-height: 300px; 
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo sutil para que se lea bien */
+    backdrop-filter: blur(10px);        /* Efecto de vidrio esmerilado */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
