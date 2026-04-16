@@ -138,15 +138,87 @@ img{
 .proyect-photo:hover{
     transform: scale(0.9);
 }
+/* El telón que bloquea el fondo */
+.padre-oculto {
+    display: none; /* Empieza invisible */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
+    backdrop-filter: blur(8px);           /* Desenfoca tu fondo de la ciudad */
+    z-index: 1000;                        /* Asegura que esté por encima de todo */
+}
 
-.container-oculto{
-    display: none; /* Invisible al principio */
-    width: 100%;   /* Ocupa el ancho disponible en la columna derecha */
-    min-height: 300px; 
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo sutil para que se lea bien */
-    backdrop-filter: blur(10px);        /* Efecto de vidrio esmerilado */
-    border-radius: 15px;
-    padding: 20px;
+/* El cuadro blanco/gris con las fotos */
+.container-oculto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 100%;
+    max-width: 1000px;
+    max-height: 80vh; /* Para que no se salga de la pantalla arriba/abajo */
+    background: #1e1e1e; /* Color oscuro a juego con tu portfolio */
+    padding: 30px;
+    border-radius: 20px;
+    overflow-y: auto;    /* PERMITE HACER SCROLL si hay muchas fotos */
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Estilo para tus fotos dentro del visor */
+.photo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    gap: 20px;
     color: white;
+    border: solid white 2px;
+}
+
+.close{
+    font-size: 20px;
+    background-color:rgba(255,255,255,0.1) ;
+    border-radius: 50px;
+    width: 100px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 5px;
+    padding: 10px;
+    border: none;
+    animation: close 2s  infinite;
+    transition: 5s;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.close:hover{
+    color: black;
+    transform: scale(1.1);
+    background: linear-gradient(150deg, red, rgba(255,255,255,0.1));
+}
+
+.pie-pagina{
+    border: solid white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1900px;
+    text-align: center;
+    height: 30px;
+    background: linear-gradient(20deg, red, rgba(255,255,255,0.1));
+}
+
+.pie-pagina p{
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px black;
 }

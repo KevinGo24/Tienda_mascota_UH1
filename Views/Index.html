@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="/Assets/js/index.js"></script>
     <header class="Encabezado">
         <nav class="Nav">
             <ul>
@@ -76,10 +77,24 @@
             </div>
         </section>
         <div class="container-buttons">
-            <button class="proyect-photo" id="proyect">Fotos de mis Proyectos</button>
+            <button class="proyect-photo" id="proyect" onclick="ocultar()">Fotos de mis Proyectos</button>
             <button class="proyect-photo" id="social">Redes Sociales</button>
         </div>
-        <div class="container-oculto"></div>
+        <footer class="pie-pagina">
+        <p>Kevin Gonzalez visbal</p>
+            <p>2026</p>
+        </footer>
+        <div class="padre-oculto" id="div-invisible">
+            <div class="container-oculto" >
+                <h2>foto 1</h2>
+                <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
+                <h2>foto 2</h2>
+                <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
+                <h2>foto 3</h2>
+                <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
+                <button class="close" type="button" id="close" onclick="cerrar()">cerrar</button>
+            </div>
+        </div>
     </main>
 </body>
 

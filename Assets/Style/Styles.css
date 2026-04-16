@@ -6,7 +6,7 @@
 
 body {
     /* Usando la imagen de pasto que mencionaste */
-    background-image: url(/Picture/1.avif);
+    background-image: url(/Assets/Picture/1.avif);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
