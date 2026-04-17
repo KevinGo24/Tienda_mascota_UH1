@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(/Assets/Picture/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.filtro{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: linear-gradient(5odeg, #6a6f77, #f69171);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50% ;
+    justify-content: center;
+    backdrop-filter: blur(10px); /* Desenfoca lo que está DETRÁS del formulario */
+    -webkit-backdrop-filter: blur(100px);
+    border: solid 5px #6a6f77;
+    border-radius: 5px;
+    box-shadow: #6a6f77 1px 10px 10px 1px ;
+}
+
+.formulario{
+    height: 100%;
+    width: 100%;
+    border: solid 5px #f69171;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 4px
+}
+
+.formulario h1 {
+    letter-spacing: 5px;
+    color: whitesmoke;
+    border: solid #6a6f77 5px;
+}
+
+.formulario p{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline #6a6f77;
+}
+
+.Txt_users{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border: none;
+    height: 30px;
+    width: 300px;
+    border-radius: 100px;
+    padding: 10px;
+    background: linear-gradient(50deg, #6a6f77, #f69171);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Btn_enviar{
+    height: 30px;
+    background: linear-gradient(50deg, #6a6f77, #f69171);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 15px;
+    color: white;
+    width: 200px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.Btn_enviar:hover{
+    transform: scale(0.9);
+}
+
+::placeholder{
+    color: wheat;
+    text-decoration: underline;
+    font-size: 15px;
+    text-align: center;
+}
+
+textarea{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border: none;
+    width: 300px; /* Ancho inicial igual a tus inputs */
+    min-width: 200px; /* No deja que lo hagan más pequeño de esto */
+    max-width: 100%;  /* Evita que se salga del contenedor padre */
+    
+    height: 100px;    /* Altura inicial */
+    min-height: 50px;
+    max-height: 200px; /* Evita que crezca hacia abajo infinitamente */
+    padding: 10px;
+    background:#f69171;
+    font-size: 20px;
+    font-weight: bolder;
+    position:static;
+}
