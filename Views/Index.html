@@ -10,7 +10,9 @@
 </head>
 
 <body>
+    <!--Script para mostar div invisible -->
     <script src="/Assets/js/index.js"></script>
+    <!------------------------------------->
     <header class="Encabezado">
         <nav class="Nav">
             <ul>
@@ -77,6 +79,7 @@
             </div>
         </section>
         <div class="container-buttons">
+            <!--proyect -> boton encragado de mostar el div de fotos que se mantiene oculto-->
             <button class="proyect-photo" id="proyect" onclick="ocultar()">Fotos de mis Proyectos</button>
             <button class="proyect-photo" id="social">Redes Sociales</button>
         </div>
@@ -84,7 +87,9 @@
         <p>Kevin Gonzalez visbal</p>
             <p>2026</p>
         </footer>
+        <!--Div padre no permite al usuario controlar el contenido primario-->
         <div class="padre-oculto" id="div-invisible">
+            <!--Div hijo nos muestra el contenido que se encuentra como imagenes o formularios-->
             <div class="container-oculto" >
                 <h2>foto 1</h2>
                 <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
@@ -92,6 +97,7 @@
                 <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
                 <h2>foto 3</h2>
                 <img src="/Assets/Picture/1.jpeg" alt="" class="photo">
+                <!--button de close para cerrar el div mostrado -->
                 <button class="close" type="button" id="close" onclick="cerrar()">cerrar</button>
             </div>
         </div>
